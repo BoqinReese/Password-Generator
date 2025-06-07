@@ -25,9 +25,21 @@ function decrement(){
 }
 
 function generatePassword(){
-    let randomNoPlaceholder = []
-    for (let i = 0; randomNoPlaceholder.length < length; i++){
-        randomNoPlaceholder.push(characters[Math.floor(Math.random()*characters.length) + 1])
+    let passwordOne = document.getElementById("new-password-1")
+    let passwordTwo = document.getElementById("new-password-2")
+    let randomNoPlaceholder1 = []
+    let randomNoPlaceholder2 = []
+
+    if (passwordOne.id === "new-password-1"){
+        for (let i = 0; randomNoPlaceholder1.length < length; i++){
+            randomNoPlaceholder1.push(characters[Math.floor(Math.random()*characters.length) + 1])
+        }
+        passwordOne.innerHTML = randomNoPlaceholder1.join("")
     }
-    document.getElementById("new-password").innerHTML = randomNoPlaceholder.join("")
+    if (passwordTwo.id === "new-password-2") {
+        for (let i = 0; randomNoPlaceholder2.length < length; i++){
+            randomNoPlaceholder2.push(characters[Math.floor(Math.random()*characters.length) + 1])
+        }
+        passwordTwo.innerHTML = randomNoPlaceholder2.join("")
+    }
 }
