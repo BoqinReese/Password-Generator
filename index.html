@@ -4,21 +4,24 @@
         <title>Home</title>
         <link rel="stylesheet" href="styles.css">
         <script src="client.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     </head>
     <body>
         <div class="main-container">
             <div class="heading">
-                <h1>Password Generator</h1>
+                <p>Password Generator</p>
             </div>
             <div class="content">
                 <div class="length">
-                    <p>Length</p>
+                    <p id="length">Length</p>
                     <p id="length-digit">0</p>
                 </div>
                 <button onclick="increment()">Increase</button>
                 <button onclick="decrement()">Decrease</button>
             </div>
-            <div class="checkboxes">
+            <!-- <div class="checkboxes">
                 <label>Numbers
                     <input type="checkbox" checked="checked">
                 </label>
@@ -31,13 +34,13 @@
                 <br><label>Special Characters
                     <input type="checkbox" >
                 </label>
-            </div>
+            </div> -->
             <div class="generate">
                 <button onclick="generatePassword()">Generate</button>
-                <h2>Option 1</h2>
-                <h3 id="new-password-1">Your New Password</h3>
-                <h2>Option 2</h2>
-                <h3 id="new-password-2">Your New Password</h3>
+                <p id="opt1">Option 1</p>
+                <p id="new-password-1">Your New Password</p>
+                <p id="opt2">Option 2</p>
+                <p id="new-password-2">Your New Password</p>
             </div>
         </div>
     </body>
