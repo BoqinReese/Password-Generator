@@ -57,7 +57,7 @@ body {
 .generate{
     width: 80%;
 }
-.generate button{
+#genBtn{
     width: 100%;
     font-size: 25px;
     border: none;
@@ -89,4 +89,17 @@ body {
 #opt1, #opt2{
     font-size: 20px;
     color: #023e8a;
+}
+
+#copyBtn1, #copyBtn2{
+    width: 70px;
+    background-color: #023e8a;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 6px;
+    position: absolute;
+    left: 358px;
+    margin-top: -45px;
+    border: none;
+    
 }

@@ -44,3 +44,19 @@ function generatePassword(){
         passwordTwo.innerHTML = randomNoPlaceholder2.join("")
     }
 }
+
+function copiedPasswordOne(){
+    let pwCopy = document.getElementById("new-password-1")
+    pwCopy.select();
+    pwCopy.setSelectionRange(0,99999)
+    navigator.clipboard.writeText(pwCopy.value)
+    alert("Password Copied to Clipboard.")
+}
+
+function copiedPasswordTwo(){
+    let pwCopy = document.getElementById("new-password-2")
+    pwCopy.select();
+    pwCopy.setSelectionRange(0,99999)
+    navigator.clipboard.writeText(pwCopy.value)
+    alert("Password Copied to Clipboard.")
+}

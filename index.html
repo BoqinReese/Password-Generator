@@ -7,6 +7,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/85b158d845.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <div class="main-container">
@@ -16,31 +17,19 @@
             <div class="content">
                 <div class="length">
                     <p id="length">Length</p>
-                    <p id="length-digit">0</p>
+                    <p id="length-digit">4</p>
                 </div>
                 <button onclick="increment()">Increase</button>
                 <button onclick="decrement()">Decrease</button>
             </div>
-            <!-- <div class="checkboxes">
-                <label>Numbers
-                    <input type="checkbox" checked="checked">
-                </label>
-                <br><label>Small Letters
-                    <input type="checkbox" >
-                </label>
-                <br><label>Capital Letters
-                    <input type="checkbox" >
-                </label>
-                <br><label>Special Characters
-                    <input type="checkbox" >
-                </label>
-            </div> -->
             <div class="generate">
-                <button onclick="generatePassword()">Generate</button>
+                <button id="genBtn" onclick="generatePassword()">Generate</button>
                 <p id="opt1">Option 1</p>
                 <p id="new-password-1">Your New Password</p>
+                <button id="copyBtn1" onclick="copiedPasswordOne()"><i class="fa-solid fa-clone"></i> Copy</button>
                 <p id="opt2">Option 2</p>
                 <p id="new-password-2">Your New Password</p>
+                <button id="copyBtn2" onclick="copiedPasswordTwo()"><i class="fa-solid fa-clone"></i> Copy</button>
             </div>
         </div>
     </body>
